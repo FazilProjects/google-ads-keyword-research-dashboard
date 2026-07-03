@@ -1,38 +1,69 @@
 # Google Ads Keyword Research & Campaign Structure Dashboard
 
-A professional static frontend dashboard that helps turn a short business brief into a keyword research and campaign structure plan for Google Ads learning and portfolio presentation.
+A professional frontend portfolio project that turns a short business brief into a practical Google Ads keyword research and campaign structure plan.
 
-This is a portfolio project for Fazil Waseem, an aspiring Performance Marketer learning Google Ads, Meta Ads, lead generation, ecommerce marketing, and AI-assisted marketing systems.
+Live Demo: https://fazilprojects.github.io/google-ads-keyword-research-dashboard/
 
-## Purpose
+## Project Purpose
 
-The dashboard is designed to demonstrate practical search marketing thinking:
+This project was built by Fazil Waseem as a Google Ads and performance marketing portfolio project.
 
-- Business brief intake
-- Business type and campaign goal selection
-- Target location and budget inputs
-- Keyword idea generation
-- Search intent grouping
-- Ad group planning
+The goal is to show practical understanding of search campaign planning workflows, including keyword research, search intent grouping, ad group structure, match type planning, negative keywords, and campaign organization.
+
+This is not a real Google Ads platform and does not connect to Google Ads, keyword volume APIs, or live campaign data. It is a local JavaScript-based planning dashboard.
+
+## What It Does
+
+The user enters a short business brief, selects a business type, campaign goal, target location, and budget. The dashboard then generates a structured keyword research and campaign planning outline.
+
+The generated plan includes:
+
+- Keyword ideas
+- Search intent groups
+- Ad group structure
 - Match type suggestions
 - Negative keyword ideas
 - Campaign structure preview
+- Ad copy starter ideas
+- Exportable keyword plan
+
+## Key Features
+
+- Short brief to keyword plan workflow
+- Google Ads search campaign planning structure
+- 24+ keyword idea generation
+- Search intent grouping
+- Ad group planner
+- Broad, phrase, and exact match type suggestions
+- Negative keyword list
+- Campaign structure preview
 - Starter ad copy ideas
-- Export and reset controls
+- Export plan feature
+- Reset functionality
+- Responsive mobile-friendly layout
+- No external APIs
+- No external frameworks
 
-## Important Boundary
+## Test Example
 
-This project does not connect to Google Ads, Google APIs, keyword databases, live search volume tools, or external marketing platforms. It is a local planning dashboard that uses simple rule-based JavaScript logic for portfolio and learning purposes.
+Example campaign used for testing:
+
+**Business:** Bright Dental Studio  
+**Business type:** Local service  
+**Campaign goal:** Generate leads  
+**Location:** Karachi, Pakistan  
+**Budget:** 150000  
+
+The dashboard generated keyword ideas, intent groups, dental-specific ad groups, match type suggestions, negative keywords, campaign structure cards, and starter ad copy ideas.
 
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
-- No external frameworks or libraries
-- GitHub Pages compatible
+- GitHub Pages
 
-## Project Structure
+## Folder Structure
 
 ```text
 .
@@ -41,16 +72,7 @@ This project does not connect to Google Ads, Google APIs, keyword databases, liv
 ├── script.js
 ├── README.md
 ├── AGENTS.md
-└── docs
+└── docs/
     ├── PROJECT_BRIEF.md
     ├── DESIGN_SYSTEM.md
     └── CONTENT.md
-```
-
-## Local Use
-
-Open `index.html` in a browser. No build step is required.
-
-## Status
-
-Initial project structure and planning files created. The first static dashboard shell includes local keyword planning logic and is ready for review.
