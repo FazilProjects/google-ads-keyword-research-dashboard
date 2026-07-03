@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Ads Keyword Research & Campaign Structure Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="hero-ambient hero-ambient-one"></div>
+      <div class="hero-ambient hero-ambient-two"></div>
+      <div class="header-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio planning dashboard</p>
+          <h1>Google Ads Keyword Research & Campaign Structure Dashboard</h1>
+          <p class="intro">
+            Turn a short business brief into a practical search campaign planning outline with keyword groups, match types, negative keywords, and starter ad copy.
+          </p>
+          <div class="proof-strip" aria-label="Dashboard capabilities">
+            <span>Keyword Research</span>
+            <span>Search Intent</span>
+            <span>Ad Groups</span>
+            <span>Negative Keywords</span>
+            <span>Export Plan</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Campaign planning preview">
+          <div class="visual-toolbar">
+            <span class="search-dot"></span>
+            <span class="visual-search">dentist keywords in Lahore</span>
+          </div>
+          <div class="visual-chips">
+            <span>teeth whitening</span>
+            <span>emergency dentist</span>
+            <span>dental implants</span>
+          </div>
+          <div class="visual-chart" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="visual-blocks">
+            <div>
+              <strong>Campaign</strong>
+              <p>Search Leads</p>
+            </div>
+            <div>
+              <strong>Ad Group</strong>
+              <p>High Intent</p>
+            </div>
+          </div>
+          <div class="profile-card" aria-label="Project owner">
+            <span class="profile-label">Created by</span>
+            <strong>Fazil Waseem</strong>
+            <span>Performance marketing portfolio project</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <section class="panel planner-panel" aria-labelledby="planner-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Input</p>
+            <h2 id="planner-title">Business Brief</h2>
+          </div>
+          <span class="status-badge">Local planner only</span>
+        </div>
+
+        <form id="plannerForm" class="planner-form">
+          <label class="field field-wide" for="businessBrief">
+            <span>Business brief</span>
+            <textarea id="businessBrief" rows="6" placeholder="Example: A dental clinic offering teeth whitening, implants, and emergency appointments for patients in Lahore."></textarea>
+          </label>
+
+          <label class="field" for="businessType">
+            <span>Business type</span>
+            <select id="businessType">
+              <option value="local-service">Local service</option>
+              <option value="ecommerce">Ecommerce</option>
+              <option value="b2b">B2B service</option>
+              <option value="education">Education or training</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="real-estate">Real estate</option>
+            </select>
+          </label>
+
+          <label class="field" for="campaignGoal">
+            <span>Campaign goal</span>
+            <select id="campaignGoal">
+              <option value="leads">Generate leads</option>
+              <option value="sales">Drive online sales</option>
+              <option value="calls">Increase phone calls</option>
+              <option value="appointments">Book appointments</option>
+              <option value="awareness">Build search visibility</option>
+            </select>
+          </label>
+
+          <label class="field" for="targetLocation">
+            <span>Target location</span>
+            <input id="targetLocation" type="text" placeholder="Lahore, Pakistan" />
+          </label>
+
+          <label class="field" for="monthlyBudget">
+            <span>Monthly budget</span>
+            <input id="monthlyBudget" type="number" min="0" step="50" placeholder="1000" />
+          </label>
+
+          <div class="actions">
+            <button class="button button-primary" type="submit">Generate keyword plan</button>
+            <button class="button button-secondary" type="button" id="exportButton">Export plan</button>
+            <button class="button button-ghost" type="button" id="resetButton">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="insight-strip" aria-label="Planning principles">
+        <article>
+          <span class="dot dot-blue"></span>
+          <strong>Intent first</strong>
+          <p>Group keywords around what the searcher wants to do next.</p>
+        </article>
+        <article>
+          <span class="dot dot-red"></span>
+          <strong>Structure matters</strong>
+          <p>Separate ad groups by service, product, location, and buying stage.</p>
+        </article>
+        <article>
+          <span class="dot dot-yellow"></span>
+          <strong>Control waste</strong>
+          <p>Use negatives and match types to keep learning budgets focused.</p>
+        </article>
+        <article>
+          <span class="dot dot-green"></span>
+          <strong>Keep it honest</strong>
+          <p>This is a planning aid, not live keyword volume or Google Ads data.</p>
+        </article>
+      </section>
+
+      <section class="results-grid" aria-label="Generated campaign plan">
+        <article class="panel output-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Research</p>
+              <h2>Keyword Ideas</h2>
+            </div>
+          </div>
+          <div id="keywordChips" class="chip-cloud empty-state">Generate a plan to see keyword ideas.</div>
+        </article>
+
+        <article class="panel output-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Intent</p>
+              <h2>Search Intent Groups</h2>
+            </div>
+          </div>
+          <div id="intentGroups" class="stack-list empty-state">Search intent groups will appear here.</div>
+        </article>
+
+        <article class="panel output-panel output-wide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Campaign</p>
+              <h2>Ad Group Structure Planner</h2>
+            </div>
+          </div>
+          <div id="adGroupTable" class="table-wrap empty-state">Ad group suggestions will appear here.</div>
+        </article>
+
+        <article class="panel output-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Matching</p>
+              <h2>Match Type Suggestions</h2>
+            </div>
+          </div>
+          <div id="matchTypes" class="stack-list empty-state">Match type guidance will appear here.</div>
+        </article>
+
+        <article class="panel output-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Filtering</p>
+              <h2>Negative Keyword Ideas</h2>
+            </div>
+          </div>
+          <div id="negativeKeywords" class="chip-cloud empty-state">Negative keyword ideas will appear here.</div>
+        </article>
+
+        <article class="panel output-panel output-wide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Preview</p>
+              <h2>Campaign Structure Preview</h2>
+            </div>
+          </div>
+          <div id="campaignPreview" class="campaign-preview empty-state">Campaign blocks will appear here.</div>
+        </article>
+
+        <article class="panel output-panel output-wide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Creative</p>
+              <h2>Ad Copy Starter Ideas</h2>
+            </div>
+          </div>
+          <div id="adCopyIdeas" class="ad-copy-grid empty-state">Starter ad copy ideas will appear here.</div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>
+        Portfolio project for Google Ads planning practice. Not affiliated with Google and not connected to Google Ads or keyword volume APIs.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
