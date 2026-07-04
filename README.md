@@ -4,6 +4,16 @@ A professional frontend portfolio project that turns a short business brief into
 
 Live Demo: https://fazilprojects.github.io/google-ads-keyword-research-dashboard/
 
+# Google Ads Keyword Research & Campaign Structure Dashboard
+
+A professional frontend portfolio project that turns a short business brief into a practical Google Ads keyword research and campaign structure plan.
+
+Live Demo: https://fazilprojects.github.io/google-ads-keyword-research-dashboard/
+
+## Screenshot
+
+![Google Ads Keyword Research Dashboard](google-ads-keyword-dashboard.png)
+
 ## Project Purpose
 
 This project was built by Fazil Waseem as a Google Ads and performance marketing portfolio project.
